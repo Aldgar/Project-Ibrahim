@@ -1,0 +1,66 @@
+/*SignUp Page*/
+
+body {
+  background-color:#f4f4f4 ;
+  font-family: Martel Sans, sans-serif;
+}
+
+.form-part {
+    flex: 1;
+    height: 1000px;
+    }
+    
+    .code-part {
+    flex: 1;
+    height: 1000px;
+    background-color: #23155B;
+    }
+    
+    .form-2 {
+      background-color: white;
+      width: 400px;
+      height: 300px;
+      border-radius: 20px;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 130px;
+      margin-bottom: 30px;
+     margin: 200px;
+    }
+    
+    input {
+      display: block;
+      background: #23155B;
+      padding: 15px;
+      border-radius: 10px;
+      width: 150px;
+      padding-right: 200px;
+      margin-left: 20px;
+      margin-top: 15px;
+      color: #f4f4f4;
+    }
+    
+    ::placeholder {
+      color: #f4f4f4;
+    }
+    .btn-3 {
+      width: 370px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-top: 20px;
+      background-color: #8053FF;
+      color: #f4f4f4;
+      font-size: 20px;
+    }
+    
+    .coding {
+      position: relative;
+      top: 200px;
+      left: 50px;
+    }
+    #signup {
+    display: flex;
+    }
