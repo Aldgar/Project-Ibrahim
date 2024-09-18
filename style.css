@@ -2,10 +2,6 @@ body {
   background-color:#f4f4f4 ;
   font-family: Martel Sans, sans-serif;
 }
-
-#container {
-
-  }
 /*Logo & Nav*/
 
 header {
@@ -184,16 +180,17 @@ width: 600px;
 
 .testimoni {
   background-color: white;
-  width: 400px;
+  width: 600px;
   height: 300px;
   border-radius: 20px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  padding-bottom: 130px;
+  padding-bottom: 150px;
   margin-bottom: 30px;
   margin-left: 30%;
+  margin-left: 40%;
 
 }
 
@@ -253,7 +250,13 @@ textarea {
 }
 
 
-
+.testimonial-container img {
+  display: block;
+  position: relative;
+  margin: 1.8em auto 1.25em auto;
+  border-radius: 50%;
+  width: 4.4em;
+}
 
 
 
