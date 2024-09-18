@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="./style.css">
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>CodeCLA</title>
 </head>
 <body>
@@ -21,6 +22,7 @@
 </nav>
 <button class="btn-1">Join Now</button>
 </header>
+
 
 
 <!--Hero-->
@@ -200,43 +202,64 @@
 <!--Testimonials-->
 
   <div class="testimoni">
-    <h1 style="color:#8053FF;">Testimonials</h1>
-    <h1>*****</h1>
-  <div>This guy is an amazing frontend developer that delivered the task exactly how we need it, do your self a favor hire him, you will not be disappointed by thework delivered. He will go to the extra mile to make sure that you are happy with your project. I will surely work again with him!</div>
-  <img class="j-img" src="./assets/44.jpg" alt="">
-  <h3 >June Cha</h3>
-  <div>Software Engineer</div>
-</div>
+      <h1 style="color:#8053FF;">Testimonials</h1>
+      <h1>*****</h1>
+        <div class="testimonial-container" id="testimonial-container">
+              <!--This part will be created using JS:
+                <p> id="tesText"></p>
+                <img class="j-img" src="">
+                <h2 id="tesName"></h2>
+                <h3 id="tesPosition"></h3>
+              -->
+        </div>
+          <div class="tesbtn" style="display: flex; justify-content: space-between; margin-top: -30px;">
+          <button id="btnprev" style="background-color:aliceblue; border: none; width: 100px; height: 50px; font-size: 20px; color:#8053FF; cursor: pointer; margin-top: -50px;">Previous</button>
+          <button id="btnnext" style="background-color:aliceblue; border: none; width: 100px; height: 50px; font-size: 20px; color:#8053FF; cursor: pointer; margin-top: -50px;">Next</button>
+        </div>
+  </div>
 
   <!--Contact-->
  
 
   <!--Form-->
 <div class="form">
-  <h1>Contact us:</h1>
-    <form action="">
-      <div>Name</div>
-      <input type="text" placeholder="Your Name">
+  
+    
+  <form id="inputFiled" action="">
+
+    <h1>Contact us:</h1>
+      
+    <div>Name</div>
+      <input id="name" type="text" placeholder="Your Name">
+      <div style="color: red;" id="name-error"></div>
+      
       <div>Email</div>
-      <input type="email" placeholder="Email">
+      <input id="email" type="email" placeholder="Email">
+      <div style="color: red;" id="email-error"></div>
+      
       <div>Message</div>
-      <textarea placeholder="Your Message" rows="5" cols="63"></textarea>
-    </form>
+      <textarea id="message" placeholder="Your Message" rows="5" cols="63"></textarea>
+      <div style="color: red;" id="message-error"></div>
+      
       <div>
-        <button class="btn-1">Submit</button>
+        <button id="sub-button" class="btn-1">Submit</button>
       </div>
+    </form>
+      
   
     <br>
 
     <!--Footer-->
 
     <footer style="margin-top: 10px; text-align: center;">
-      &copy; 2024 Your Competitive Programming Platform. ALl rights reserved.
+      <span>&copy; </span><span id="year"></span> <span>Your Competitive Programming Platform. ALl rights reserved.</span>
     </footer>
   </div>
 </div>
 </div>
 </div>
 </div>
+
+<script src="./landing.js"></script>
 </body>
 </html>
