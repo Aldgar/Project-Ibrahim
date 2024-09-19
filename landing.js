@@ -118,14 +118,21 @@ form.addEventListener("submit", (e)=> {
         errorMessage.innerHTML = "";
     }
     //Form Submission alert:
-    e.preventDefault();
-    Swal.fire({
-        position: "top-centre",
-        title: "Thanks!",
-        text: "Your Message has been sucessfully submitted!",
-        icon: "success",
-        confirmButtonBackgroundColor: "#23155B"
-      });
+
+        if (userName.value === "" || email.value === "" || message.value === "") {
+            e.preventDefault();
+        } else {
+            e.preventDefault();
+            Swal.fire({
+                position: "top-centre",
+                title: "Thanks!",
+                text: "Your Message has been sucessfully submitted!",
+                icon: "success",
+                confirmButtonBackgroundColor: "#23155B"
+              }).then(function(){ 
+                location.reload();
+                }); 
+            }
 });
 
 //Adding EventListeners to remove the error messages when focus on the input filed:
